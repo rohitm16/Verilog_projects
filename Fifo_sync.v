@@ -38,7 +38,7 @@ module fifo_sync #(
                     rd_ptr <= 0;
                     wr_ptr <= 0;
                 end  
-            // if written below then this will never be execruted 
+            // if written below then this will never be executed 
             else if(do_read && do_write)
                 begin
                     rd_ptr <= rd_ptr +1;
